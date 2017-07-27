@@ -1,0 +1,9 @@
+[Unit]
+Description=Spark Slave
+
+[Service]
+User=root
+ExecStart=/opt/spark/sbin/start-slave.sh {{ spark_master_url }}
+
+[Install]
+WantedBy=multi-user.target

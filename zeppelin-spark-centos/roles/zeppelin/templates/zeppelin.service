@@ -1,0 +1,8 @@
+[Unit]
+Description=Zeppelin Service
+
+[Service]
+ExecStart=/opt/zeppelin/bin/zeppelin.sh
+
+[Install]
+WantedBy=multi-user.target

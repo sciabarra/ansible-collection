@@ -1,0 +1,9 @@
+[Unit]
+Description=Spark Master
+
+[Service]
+User=root
+ExecStart=/opt/spark/sbin/start-master.sh
+
+[Install]
+WantedBy=multi-user.target

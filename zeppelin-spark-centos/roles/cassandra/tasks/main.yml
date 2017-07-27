@@ -1,0 +1,12 @@
+- get_url:
+    url:     "{{ cassandra_url }}"
+    dest:    "/root/apache-{{cassandra_version}}.tar.gz"
+- unarchive:
+    copy: no
+    src: "/root/apache-cassandra-{{cassandra_version}}-bin.tar.gz"
+    dest: "/opt"
+    creates: "/opt/apache-cassandra-{{cassandra_version}}-bin"
+- file:
+    src: "/opt/apache-cassandra-{{cassandra_version}}-bin"
+    dest: "/opt/cassandra"
+    state: link

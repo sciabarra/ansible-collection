@@ -1,0 +1,8 @@
+[test]
+spark3.sciabarra.net
+[servers]
+spark1.sciabarra.net spark_master=False spark_master_url=spark://spark2.sciabarra.net:7077
+spark2.sciabarra.net spark_master=True
+spark3.sciabarra.net spark_master=False spark_master_url=spark://spark2.sciabarra.net:7077
+[zeppelin]
+spark1.sciabarra.net spark_master_url=spark://spark2.sciabarra.net:7077

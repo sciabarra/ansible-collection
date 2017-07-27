@@ -1,0 +1,31 @@
+- package: name=firewalld
+- package: name=python-firewall
+- service: name=firewalld state=started
+
+- firewalld:
+   port: 23-65535/tcp
+   source: 0.0.0.0/0
+   state: disabled
+   permanent: yes
+   immediate: yes
+
+- firewalld:
+   port: 23-65535/tcp
+   source: 172.93.54.0/24
+   state: enabled
+   permanent: yes
+   immediate: yes
+
+- firewalld:
+   port: 8080-8081/tcp
+   source: 93.41.96.136/32
+   state: enabled
+   permanent: yes
+   immediate: yes
+
+- firewalld:
+   port: 8080-8081/tcp
+   source: 79.7.155.229
+   state: enabled
+   permanent: yes
+   immediate: yes

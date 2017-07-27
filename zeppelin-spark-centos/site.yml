@@ -1,0 +1,8 @@
+- hosts: servers
+  roles:
+    - java
+    - spark
+    - iptables
+- hosts: zeppelin
+  roles:
+     - zeppelin
