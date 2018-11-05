@@ -1,0 +1,8 @@
+127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4
+192.168.56.10 kube0.k8s kube0 
+192.168.56.11 kube1.k8s kube1 
+192.168.56.12 kube2.k8s kube2 
+192.168.56.13 kube3.k8s kube3 
+192.168.56.20 kcp0.k8s kcp0 
+192.168.56.21 kcp1.k8s kcp1 
+192.168.56.22 kcp2.k8s kcp2 
